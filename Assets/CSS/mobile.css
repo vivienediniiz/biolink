@@ -1,0 +1,262 @@
+
+:root {
+  --cor1: #f06adb;
+  --cor2: #c24ff0;
+  --cor3: #ffd893;
+  --cor4: #292929;
+  --cor5: #7c7a7d;
+  --cor6: #2E2E2E;
+  --cor7: #ffffff;
+  --cor9: #10041D;
+  --efeito-degrade-texto: 
+  linear-gradient(-45deg, #ff1e56, #6a11cb, #fc25f1);
+
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-family-quik: "Quicksand", sans-serif;
+  --font-family-mono: "Roboto Mono", monospace;
+  --font-family-codec: "Source Code Pro", serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  
+  @media (max-width:480px){
+    .interface {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        z-index: 2000;
+     
+        
+      }
+  
+.container-principal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+  .background{
+    position: relative;
+    width: 100%;
+    height: 852px;
+    flex-shrink: 0;
+    border-radius: 37px 37px 0px 0px;
+    z-index: -1;
+   
+  }
+
+  #background-hrs{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  
+
+  .clock{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -80px;
+    padding: 20px;
+    
+    
+  }
+
+  .hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(4.800000190734863px);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+
+
+  #saudacao{
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: var(--font-family-quik);
+  }
+
+
+  .form-opacity{
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    flex-shrink: 0;
+    fill: linear-gradient(180deg, #CD93FF 38.21%, #A13CA3 99.97%);
+    opacity: 0.68;
+    filter: drop-shadow(13px 0px 9px rgba(0, 0, 0, 0.25));
+  }
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    gap: 5px;
+    
+    
+    
+  }
+
+  .imagem-topo{  
+    position: absolute; 
+    top: 0;
+    margin-top: 120px;
+
+  }
+
+
+  #name{
+    font-family: var(--font-family-quik);
+    font-size: 2rem;
+    color: aliceblue;
+    top: 0;
+    margin-top: 260px;
+  }
+  
+  #typing-effect{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-family: var(--font-family-mono);
+    color: var(--cor7);
+    font-weight: 400;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 18px; /* Altura do cursor */
+    background-color: var(--cor4);
+    animation: blink 1s infinite;
+    vertical-align: middle; /* Centraliza verticalmente */
+    position: relative;
+    top: -1px; /* Ajuste fino para alinhamento perfeito */
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
+}
+
+.links-icones{  
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1px;
+  padding: 10px;
+  
+  
+  
+}
+.links-redes-sociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  width:156px ;
+  height: 160px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 11px;
+  flex-wrap: wrap;
+  
+}
+
+
+.links-redes-sociais-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  width:156px ;
+  height: 160px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px 11px;
+  flex-wrap: wrap;
+  
+}
+  .icon{
+    width: 50px;
+    height: 50px;
+  }
+
+#github .img {
+  width: 20px;
+  height: auto;
+  background-color: red;
+}
+
+  #gitHub, #instagram, #tiktok, #linkdin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(11.399999618530273px);
+  }
+ .links-2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  
+  background-color: red;
+ }
+
+  #buymycoffee{
+    position:absolute;
+    top: 0;
+    margin-top: 50px;
+    width: 160px;
+    height: 40px;
+  }
+  }

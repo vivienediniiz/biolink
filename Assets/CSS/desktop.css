@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  
+  @media (min-width: 480px) {
+    body {
+      font-size: 18px;
+      background-color: blue;
+    }
+  }
+
+    .interface{
+      background-color: rgb(117, 19, 230);
+    }
